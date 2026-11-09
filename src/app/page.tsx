@@ -1,12 +1,12 @@
 import { assetPath } from "@/lib/paths";
 import { AccountSteps } from "@/components/account-steps";
 import Link from "next/link";
-import { ButtonLink, TextLink, FAQItem } from "@/components/ui";
+import { ArrowIcon, ButtonLink, TextLink, FAQItem } from "@/components/ui";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata(
   "Stake Global | Trade Beyond the Limits.",
-  "Explore Forex, Metals, and Indices with Stake Global. Discover available MetaTrader and MT5 platforms and learn how to connect with our team.",
+  "Explore Forex, Metals, and Indices with Stake Global. Discover the MetaFix platform and learn how to connect with our team.",
   "/",
 );
 
@@ -41,10 +41,10 @@ export default function Page() {
           </p>
           <div className="actions">
             <ButtonLink href="/open-account/" className="">
-              Open an Account
+              Open Live Account
             </ButtonLink>
             <ButtonLink href="/contact/" className="secondary">
-              Contact Our Team
+              Login
             </ButtonLink>
           </div>
           <p className="micro">
@@ -56,7 +56,7 @@ export default function Page() {
           <Link href="#markets">
             Explore Stake Global{" "}
             <span className="down" aria-hidden="true">
-              ↓
+              <ArrowIcon direction="down" />
             </span>
           </Link>
         </div>
@@ -91,7 +91,7 @@ export default function Page() {
             economies.
           </p>
           <span className="circle-arrow" aria-hidden="true">
-            ↗
+            <ArrowIcon />
           </span>
         </Link>
         <Link className="market-row" href="/markets/#metals">
@@ -102,7 +102,7 @@ export default function Page() {
             global sentiment.
           </p>
           <span className="circle-arrow" aria-hidden="true">
-            ↗
+            <ArrowIcon />
           </span>
         </Link>
         <Link className="market-row" href="/markets/#indices">
@@ -113,7 +113,7 @@ export default function Page() {
             indices.
           </p>
           <span className="circle-arrow" aria-hidden="true">
-            ↗
+            <ArrowIcon />
           </span>
         </Link>
         <div className="section-bottom">
@@ -151,15 +151,20 @@ export default function Page() {
               Fresh perspective.
             </h2>
             <p className="intro">
-              Explore MetaTrader and MetaFix 5, available through Stake Global.
+              Explore MetaFix Trader, available through Stake Global.
             </p>
             <div className="platform-list">
               <div className="platform-item">
-                <strong>MetaTrader</strong>
-                <span>Available</span>
-              </div>
-              <div className="platform-item">
-                <strong>MetaFix 5</strong>
+                <strong className="platform-brand">
+                  <img
+                    className="platform-icon"
+                    src={assetPath("/assets/metafix-icon.png")}
+                    width="277"
+                    height="286"
+                    alt=""
+                  />
+                  MetaFix Trader
+                </strong>
                 <span>Available</span>
               </div>
             </div>
@@ -268,7 +273,7 @@ export default function Page() {
         </div>
         <div>
           <FAQItem question="Which trading platforms are available?">
-            MetaTrader and MetaFix 5 are available through Stake Global. Contact
+            MetaFix is available through Stake Global. Contact
             our team for information about access and your account requirements.
           </FAQItem>
           <FAQItem question="How do I open an account?">

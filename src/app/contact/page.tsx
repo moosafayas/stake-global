@@ -1,5 +1,6 @@
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import Link from "next/link";
+import { Arrow } from "@/components/ui";
 
 import { pageMetadata } from "@/lib/site";
 import { Suspense } from "react";
@@ -40,12 +41,12 @@ export default function ContactPage() {
               Find out how our team guides you through the manual
               account-opening process.
             </p>
-            <Link href="/open-account/">Explore the account process ↗</Link>
+            <Link href="/open-account/">Explore the account process <Arrow /></Link>
           </div>
           <div className="contact-type">
             <h3>Markets & platforms</h3>
             <p>
-              Ask about MetaTrader, MT5, market coverage, or the details
+              Ask about MetaFix, market coverage, or the details
               relevant to your inquiry.
             </p>
           </div>

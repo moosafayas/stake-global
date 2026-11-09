@@ -4,8 +4,8 @@ import { ButtonLink, TextLink } from "@/components/ui";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata(
-  "MetaTrader & MT5 Trading Platforms | Stake Global",
-  "Discover MetaTrader and MetaFix 5, available through Stake Global. Speak with our team about platform access and account requirements.",
+  "MetaFix Trading Platform | Stake Global",
+  "Discover MetaFix, available through Stake Global. Speak with our team about platform access and account requirements.",
   "/platforms/",
 );
 
@@ -20,7 +20,7 @@ export default function Page() {
           <span className="muted">Your trading environment.</span>
         </h1>
         <p className="intro">
-          MetaTrader and MetaFix 5 are available through Stake Global. Our team
+          MetaFix is available through Stake Global. Our team
           can guide you on platform access and the requirements for your
           account.
         </p>
@@ -44,25 +44,20 @@ export default function Page() {
         />
       </div>
       <section className="wrap section two-col">
-        <article className="platform-page-card">
+        <div className="platform-page-card">
           <div className="eyebrow">Available through Stake Global</div>
-          <h2>MetaTrader</h2>
-          <p>
-            A familiar environment for charting, technical analysis, and
-            automated trading through Expert Advisors.
-          </p>
-          <ul>
-            <li>Charting and technical analysis</li>
-            <li>Expert Advisor capabilities</li>
-            <li>Established trading environment</li>
-          </ul>
-          <TextLink href="/contact/?inquiry=platform">
-            Ask about MetaTrader
-          </TextLink>
-        </article>
+          <h2 className="platform-brand">
+            <img
+              className="platform-icon"
+              src={assetPath("/assets/metafix-icon.png")}
+              width="277"
+              height="286"
+              alt=""
+            />
+            MetaFix Trader
+          </h2>
+        </div>
         <article className="platform-page-card">
-          <div className="eyebrow">Available through Stake Global</div>
-          <h2>MetaFix 5</h2>
           <p>
             An established platform for charting, technical analysis, and
             automated trading, with features determined by the supported
@@ -73,7 +68,7 @@ export default function Page() {
             <li>Automated trading capabilities</li>
             <li>Configuration-specific market access</li>
           </ul>
-          <TextLink href="/contact/?inquiry=platform">Ask about MT5</TextLink>
+          <TextLink href="/contact/?inquiry=platform">Ask about MetaFix</TextLink>
         </article>
       </section>
       <div className="wrap section content-divider">
